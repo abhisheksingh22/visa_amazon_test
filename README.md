@@ -13,3 +13,12 @@ How to run test:
 4. Open testData.properties file (under src/test/resources directory) and change the value as needed than save file
 5. Now Right click on TestRunner.java file (under src/test/java/org/visa/amazon/test/testexecute directory) and run as "Junit Test"
 6. Once all execution completed report will be generated under 'report/cucumber-test-report' directory to see the test report.
+
+
+Answer of #2 question:
+$ awk -F',' '{print "", $1}' testdata.csv | sed -z 's/\n/;/g' | sed -z 's/,//g'
+
+Note: testdata.csv  - is the csv file name.
+
+Out put:
+ Atlanta; Atlantic City; Austin; Baltimore; Baton Rouge; Billings; Birmingham; Bismarck; Boise; Boston; Bridgeport
