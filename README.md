@@ -1,4 +1,4 @@
-VISA coding round test:
+VISA BDD automation test:
 
 Pre-requisite to run the test:
 1. Java 1.8 should be installed in machine
